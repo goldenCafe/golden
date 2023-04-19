@@ -93,6 +93,8 @@
             return null;
           };
           var p = Tracker.prototype;
+          var dummyDELETEMEVARIABLE = null;
+          
           p.get = noopfn;
           p.set = noopfn;
           p.send = function () {
