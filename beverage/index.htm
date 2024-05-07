@@ -11,9 +11,9 @@
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag('js', new Date());
+      gtag("js", new Date());
 
-      gtag('config', 'G-RE91VSQP69');
+      gtag("config", "G-RE91VSQP69");
     </script>
     <meta charset="UTF-8" />
     <title>beverage &#8211; Golden</title>
@@ -38,15 +38,15 @@
       data-cfasync="false"
     ></script>
     <script type="text/javascript" data-cfasync="false">
-      var mi_version = '7.17.0';
+      var mi_version = "7.17.0";
       var mi_track_user = true;
-      var mi_no_track_reason = '';
+      var mi_no_track_reason = "";
 
-      var disableStr = 'ga-disable-UA-190357853-2';
+      var disableStr = "ga-disable-UA-190357853-2";
 
       /* Function to detect opted out users */
       function __gtagTrackerIsOptedOut() {
-        return document.cookie.indexOf(disableStr + '=true') > -1;
+        return document.cookie.indexOf(disableStr + "=true") > -1;
       }
 
       /* Disable tracking if the opt-out cookie exists. */
@@ -57,11 +57,11 @@
       /* Opt-out function */
       function __gtagTrackerOptout() {
         document.cookie =
-          disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+          disableStr + "=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/";
         window[disableStr] = true;
       }
 
-      if ('undefined' === typeof gaOptout) {
+      if ("undefined" === typeof gaOptout) {
         function gaOptout() {
           __gtagTrackerOptout();
         }
@@ -71,13 +71,13 @@
         function __gtagTracker() {
           dataLayer.push(arguments);
         }
-        __gtagTracker('js', new Date());
-        __gtagTracker('set', {
-          'developer_id.dZGIzZG': true
+        __gtagTracker("js", new Date());
+        __gtagTracker("set", {
+          "developer_id.dZGIzZG": true,
         });
-        __gtagTracker('config', 'UA-190357853-2', {
+        __gtagTracker("config", "UA-190357853-2", {
           forceSSL: true,
-          link_attribution: true
+          link_attribution: true,
         });
         window.gtag = __gtagTracker;
         (function () {
@@ -97,7 +97,7 @@
           p.set = noopfn;
           p.send = function () {
             var args = Array.prototype.slice.call(arguments);
-            args.unshift('send');
+            args.unshift("send");
             __gaTracker.apply(null, args);
           };
           var __gaTracker = function () {
@@ -107,40 +107,40 @@
             }
             var f = arguments[len - 1];
             if (
-              typeof f !== 'object' ||
+              typeof f !== "object" ||
               f === null ||
-              typeof f.hitCallback !== 'function'
+              typeof f.hitCallback !== "function"
             ) {
-              if ('send' === arguments[0]) {
+              if ("send" === arguments[0]) {
                 var hitConverted,
                   hitObject = false,
                   action;
-                if ('event' === arguments[1]) {
-                  if ('undefined' !== typeof arguments[3]) {
+                if ("event" === arguments[1]) {
+                  if ("undefined" !== typeof arguments[3]) {
                     hitObject = {
                       eventAction: arguments[3],
                       eventCategory: arguments[2],
                       eventLabel: arguments[4],
-                      value: arguments[5] ? arguments[5] : 1
+                      value: arguments[5] ? arguments[5] : 1,
                     };
                   }
                 }
-                if (typeof arguments[2] === 'object') {
+                if (typeof arguments[2] === "object") {
                   hitObject = arguments[2];
                 }
-                if (typeof arguments[5] === 'object') {
+                if (typeof arguments[5] === "object") {
                   Object.assign(hitObject, arguments[5]);
                 }
-                if ('undefined' !== typeof arguments[1].hitType) {
+                if ("undefined" !== typeof arguments[1].hitType) {
                   hitObject = arguments[1];
                 }
                 if (hitObject) {
                   action =
-                    'timing' === arguments[1].hitType
-                      ? 'timing_complete'
+                    "timing" === arguments[1].hitType
+                      ? "timing_complete"
                       : hitObject.eventAction;
                   hitConverted = mapArgs(hitObject);
-                  __gtagTracker('event', action, hitConverted);
+                  __gtagTracker("event", action, hitConverted);
                 }
               }
               return;
@@ -150,18 +150,18 @@
               var gaKey,
                 hit = {};
               var gaMap = {
-                eventCategory: 'event_category',
-                eventAction: 'event_action',
-                eventLabel: 'event_label',
-                eventValue: 'event_value',
-                nonInteraction: 'non_interaction',
-                timingCategory: 'event_category',
-                timingVar: 'name',
-                timingValue: 'value',
-                timingLabel: 'event_label'
+                eventCategory: "event_category",
+                eventAction: "event_action",
+                eventLabel: "event_label",
+                eventValue: "event_value",
+                nonInteraction: "non_interaction",
+                timingCategory: "event_category",
+                timingVar: "name",
+                timingValue: "value",
+                timingLabel: "event_label",
               };
               for (gaKey in gaMap) {
-                if ('undefined' !== typeof args[gaKey]) {
+                if ("undefined" !== typeof args[gaKey]) {
                   hit[gaMap[gaKey]] = args[gaKey];
                 }
               }
@@ -179,16 +179,16 @@
           };
           __gaTracker.remove = noopfn;
           __gaTracker.loaded = true;
-          window['__gaTracker'] = __gaTracker;
+          window["__gaTracker"] = __gaTracker;
         })();
       } else {
-        console.log('');
+        console.log("");
         (function () {
           function __gtagTracker() {
             return null;
           }
-          window['__gtagTracker'] = __gtagTracker;
-          window['gtag'] = __gtagTracker;
+          window["__gtagTracker"] = __gtagTracker;
+          window["gtag"] = __gtagTracker;
         })();
       }
     </script>
@@ -492,7 +492,7 @@
       .widget-content cite,
       .widget-content figcaption,
       .widget-content .wp-caption-text {
-        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       }
     </style>
     <link
@@ -527,13 +527,13 @@
     />
     <script id="monsterinsights-frontend-script-js-extra">
       var monsterinsights_frontend = {
-        js_events_tracking: 'true',
-        download_extensions: 'doc,pdf,ppt,zip,xls,docx,pptx,xlsx',
+        js_events_tracking: "true",
+        download_extensions: "doc,pdf,ppt,zip,xls,docx,pptx,xlsx",
         inbound_paths:
           '[{"path":"\\\/go\\\/","label":"affiliate"},{"path":"\\\/recommend\\\/","label":"affiliate"}]',
-        home_url: 'https:\/\/pmenus.xyz\/golden',
-        hash_tracking: 'false',
-        ua: 'UA-190357853-2'
+        home_url: "https:\/\/pmenus.xyz\/golden",
+        hash_tracking: "false",
+        ua: "UA-190357853-2",
       };
     </script>
     <script
@@ -2206,303 +2206,7 @@
                                       <h3
                                         class="elementor-heading-title elementor-size-default"
                                       >
-                                        2.50€‎
-                                      </h3>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </section>
-                      <section
-                        class="elementor-section elementor-inner-section elementor-element elementor-element-e8a0c9e elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                        data-id="e8a0c9e"
-                        data-element_type="section"
-                      >
-                        <div
-                          class="elementor-container elementor-column-gap-no"
-                        >
-                          <div class="elementor-row">
-                            <div
-                              class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-06cfaf6"
-                              data-id="06cfaf6"
-                              data-element_type="column"
-                            >
-                              <div
-                                class="elementor-column-wrap elementor-element-populated"
-                              >
-                                <div class="elementor-widget-wrap">
-                                  <div
-                                    class="elementor-element elementor-element-cc06d64 elementor-position-left elementor-vertical-align-top elementor-widget elementor-widget-image-box"
-                                    data-id="cc06d64"
-                                    data-element_type="widget"
-                                    data-widget_type="image-box.default"
-                                  >
-                                    <div class="elementor-widget-container">
-                                      <div class="elementor-image-box-wrapper">
-                                        <div
-                                          class="elementor-image-box-content"
-                                        >
-                                          <h3 class="elementor-image-box-title">
-                                            Κρύο Τσάι <strong>Yamas</strong>
-                                          </h3>
-                                          <p
-                                            class="elementor-image-box-description"
-                                          >
-                                            <strong>βατόμουρο</strong> με μέλι
-                                            χωρίς ζάχαρη
-                                          </p>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div
-                              class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-5cbc1b2"
-                              data-id="5cbc1b2"
-                              data-element_type="column"
-                            >
-                              <div
-                                class="elementor-column-wrap elementor-element-populated"
-                              >
-                                <div class="elementor-widget-wrap">
-                                  <div
-                                    class="elementor-element elementor-element-adc6ce7 elementor-widget elementor-widget-heading"
-                                    data-id="adc6ce7"
-                                    data-element_type="widget"
-                                    data-widget_type="heading.default"
-                                  >
-                                    <div class="elementor-widget-container">
-                                      <h3
-                                        class="elementor-heading-title elementor-size-default"
-                                      >
-                                        3.50€‎
-                                      </h3>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </section>
-                      <section
-                        class="elementor-section elementor-inner-section elementor-element elementor-element-28bd9ee elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                        data-id="28bd9ee"
-                        data-element_type="section"
-                      >
-                        <div
-                          class="elementor-container elementor-column-gap-no"
-                        >
-                          <div class="elementor-row">
-                            <div
-                              class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-01d8adb"
-                              data-id="01d8adb"
-                              data-element_type="column"
-                            >
-                              <div
-                                class="elementor-column-wrap elementor-element-populated"
-                              >
-                                <div class="elementor-widget-wrap">
-                                  <div
-                                    class="elementor-element elementor-element-fb1fa9a elementor-position-left elementor-vertical-align-top elementor-widget elementor-widget-image-box"
-                                    data-id="fb1fa9a"
-                                    data-element_type="widget"
-                                    data-widget_type="image-box.default"
-                                  >
-                                    <div class="elementor-widget-container">
-                                      <div class="elementor-image-box-wrapper">
-                                        <div
-                                          class="elementor-image-box-content"
-                                        >
-                                          <h3 class="elementor-image-box-title">
-                                            Κρύο Τσάι <strong>Yamas</strong>
-                                          </h3>
-                                          <p
-                                            class="elementor-image-box-description"
-                                          >
-                                            <strong>ρόδι</strong> με μέλι χωρίς
-                                            ζάχαρη
-                                          </p>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div
-                              class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-0daec7e"
-                              data-id="0daec7e"
-                              data-element_type="column"
-                            >
-                              <div
-                                class="elementor-column-wrap elementor-element-populated"
-                              >
-                                <div class="elementor-widget-wrap">
-                                  <div
-                                    class="elementor-element elementor-element-4b4a797 elementor-widget elementor-widget-heading"
-                                    data-id="4b4a797"
-                                    data-element_type="widget"
-                                    data-widget_type="heading.default"
-                                  >
-                                    <div class="elementor-widget-container">
-                                      <h3
-                                        class="elementor-heading-title elementor-size-default"
-                                      >
-                                        3.50€‎
-                                      </h3>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </section>
-                      <section
-                        class="elementor-section elementor-inner-section elementor-element elementor-element-a1fdac2 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                        data-id="a1fdac2"
-                        data-element_type="section"
-                      >
-                        <div
-                          class="elementor-container elementor-column-gap-no"
-                        >
-                          <div class="elementor-row">
-                            <div
-                              class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-f063cf5"
-                              data-id="f063cf5"
-                              data-element_type="column"
-                            >
-                              <div
-                                class="elementor-column-wrap elementor-element-populated"
-                              >
-                                <div class="elementor-widget-wrap">
-                                  <div
-                                    class="elementor-element elementor-element-7cd1d05 elementor-position-left elementor-vertical-align-top elementor-widget elementor-widget-image-box"
-                                    data-id="7cd1d05"
-                                    data-element_type="widget"
-                                    data-widget_type="image-box.default"
-                                  >
-                                    <div class="elementor-widget-container">
-                                      <div class="elementor-image-box-wrapper">
-                                        <div
-                                          class="elementor-image-box-content"
-                                        >
-                                          <h3 class="elementor-image-box-title">
-                                            Κρύο Τσάι <strong>Yamas</strong>
-                                          </h3>
-                                          <p
-                                            class="elementor-image-box-description"
-                                          >
-                                            <strong>λεμόνι</strong> με μέλι
-                                            χωρίς ζάχαρη
-                                          </p>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div
-                              class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-58c3d9a"
-                              data-id="58c3d9a"
-                              data-element_type="column"
-                            >
-                              <div
-                                class="elementor-column-wrap elementor-element-populated"
-                              >
-                                <div class="elementor-widget-wrap">
-                                  <div
-                                    class="elementor-element elementor-element-79e1c0b elementor-widget elementor-widget-heading"
-                                    data-id="79e1c0b"
-                                    data-element_type="widget"
-                                    data-widget_type="heading.default"
-                                  >
-                                    <div class="elementor-widget-container">
-                                      <h3
-                                        class="elementor-heading-title elementor-size-default"
-                                      >
-                                        3.50€‎
-                                      </h3>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </section>
-                      <section
-                        class="elementor-section elementor-inner-section elementor-element elementor-element-c69c101 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                        data-id="c69c101"
-                        data-element_type="section"
-                      >
-                        <div
-                          class="elementor-container elementor-column-gap-no"
-                        >
-                          <div class="elementor-row">
-                            <div
-                              class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-d172974"
-                              data-id="d172974"
-                              data-element_type="column"
-                            >
-                              <div
-                                class="elementor-column-wrap elementor-element-populated"
-                              >
-                                <div class="elementor-widget-wrap">
-                                  <div
-                                    class="elementor-element elementor-element-40cef2a elementor-position-left elementor-vertical-align-top elementor-widget elementor-widget-image-box"
-                                    data-id="40cef2a"
-                                    data-element_type="widget"
-                                    data-widget_type="image-box.default"
-                                  >
-                                    <div class="elementor-widget-container">
-                                      <div class="elementor-image-box-wrapper">
-                                        <div
-                                          class="elementor-image-box-content"
-                                        >
-                                          <h3 class="elementor-image-box-title">
-                                            Κρύο Τσάι <strong>Yamas</strong>
-                                          </h3>
-                                          <p
-                                            class="elementor-image-box-description"
-                                          >
-                                            <strong>μάνγκο</strong> με μέλι
-                                            χωρίς ζάχαρη
-                                          </p>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div
-                              class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-43c737a"
-                              data-id="43c737a"
-                              data-element_type="column"
-                            >
-                              <div
-                                class="elementor-column-wrap elementor-element-populated"
-                              >
-                                <div class="elementor-widget-wrap">
-                                  <div
-                                    class="elementor-element elementor-element-bfd5617 elementor-widget elementor-widget-heading"
-                                    data-id="bfd5617"
-                                    data-element_type="widget"
-                                    data-widget_type="heading.default"
-                                  >
-                                    <div class="elementor-widget-container">
-                                      <h3
-                                        class="elementor-heading-title elementor-size-default"
-                                      >
-                                        3.50€‎
+                                        3.00€‎
                                       </h3>
                                     </div>
                                   </div>
@@ -3465,7 +3169,7 @@
                                       <h3
                                         class="elementor-heading-title elementor-size-default"
                                       >
-                                        2.50€‎
+                                        3.00€‎
                                       </h3>
                                     </div>
                                   </div>
@@ -3752,7 +3456,7 @@
                                       <h3
                                         class="elementor-heading-title elementor-size-default"
                                       >
-                                        2.50€‎
+                                        3.00€‎
                                       </h3>
                                     </div>
                                   </div>
@@ -3820,7 +3524,7 @@
                                       <h3
                                         class="elementor-heading-title elementor-size-default"
                                       >
-                                        2.50€‎
+                                        3.00€‎
                                       </h3>
                                     </div>
                                   </div>
@@ -3888,7 +3592,7 @@
                                       <h3
                                         class="elementor-heading-title elementor-size-default"
                                       >
-                                        2.50€‎
+                                        3.00€‎
                                       </h3>
                                     </div>
                                   </div>
@@ -3961,7 +3665,7 @@
                                       <h3
                                         class="elementor-heading-title elementor-size-default"
                                       >
-                                        2.50€‎
+                                        3.00€‎
                                       </h3>
                                     </div>
                                   </div>
@@ -4102,7 +3806,7 @@
                                       <h3
                                         class="elementor-heading-title elementor-size-default"
                                       >
-                                        2.50€‎
+                                        3.00€‎
                                       </h3>
                                     </div>
                                   </div>
@@ -4238,7 +3942,7 @@
                                       <h3
                                         class="elementor-heading-title elementor-size-default"
                                       >
-                                        2.50€‎
+                                        3.00€‎
                                       </h3>
                                     </div>
                                   </div>
@@ -4260,20 +3964,20 @@
     <!-- Matomo -->
     <script>
       var _paq = (window._paq = window._paq || []);
-      _paq.push(['trackPageView']);
-      _paq.push(['enableLinkTracking']);
-      _paq.push(['alwaysUseSendBeacon']);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+      _paq.push(["alwaysUseSendBeacon"]);
       _paq.push([
-        'setTrackerUrl',
-        '\/\/pmenus.xyz\/golden\/wp-content\/plugins\/matomo\/app\/matomo.php'
+        "setTrackerUrl",
+        "\/\/pmenus.xyz\/golden\/wp-content\/plugins\/matomo\/app\/matomo.php",
       ]);
-      _paq.push(['setSiteId', '1']);
+      _paq.push(["setSiteId", "1"]);
       var d = document,
-        g = d.createElement('script'),
-        s = d.getElementsByTagName('script')[0];
-      g.type = 'text/javascript';
+        g = d.createElement("script"),
+        s = d.getElementsByTagName("script")[0];
+      g.type = "text/javascript";
       g.async = true;
-      g.src = '\/\/pmenus.xyz\/golden\/wp-content\/uploads\/matomo\/matomo.js';
+      g.src = "\/\/pmenus.xyz\/golden\/wp-content\/uploads\/matomo\/matomo.js";
       s.parentNode.insertBefore(g, s);
     </script>
     <!-- End Matomo Code -->
@@ -4329,25 +4033,25 @@
     </div>
 
     <script>
-      document.body.classList.remove('no-js');
+      document.body.classList.remove("no-js");
     </script>
     <script>
       if (
-        -1 !== navigator.userAgent.indexOf('MSIE') ||
-        -1 !== navigator.appVersion.indexOf('Trident/')
+        -1 !== navigator.userAgent.indexOf("MSIE") ||
+        -1 !== navigator.appVersion.indexOf("Trident/")
       ) {
-        document.body.classList.add('is-IE');
+        document.body.classList.add("is-IE");
       }
     </script>
     <script id="rocket-browser-checker-js-after">
-      'use strict';
+      "use strict";
       var _createClass = (function () {
         function defineProperties(target, props) {
           for (var i = 0; i < props.length; i++) {
             var descriptor = props[i];
             (descriptor.enumerable = descriptor.enumerable || !1),
               (descriptor.configurable = !0),
-              'value' in descriptor && (descriptor.writable = !0),
+              "value" in descriptor && (descriptor.writable = !0),
               Object.defineProperty(target, descriptor.key, descriptor);
           }
         }
@@ -4361,7 +4065,7 @@
       })();
       function _classCallCheck(instance, Constructor) {
         if (!(instance instanceof Constructor))
-          throw new TypeError('Cannot call a class as a function');
+          throw new TypeError("Cannot call a class as a function");
       }
       var RocketBrowserCompatibilityChecker = (function () {
         function RocketBrowserCompatibilityChecker(options) {
@@ -4373,23 +4077,23 @@
         return (
           _createClass(RocketBrowserCompatibilityChecker, [
             {
-              key: '_checkPassiveOption',
+              key: "_checkPassiveOption",
               value: function (self) {
                 try {
                   var options = {
                     get passive() {
                       return !(self.passiveSupported = !0);
-                    }
+                    },
                   };
-                  window.addEventListener('test', null, options),
-                    window.removeEventListener('test', null, options);
+                  window.addEventListener("test", null, options),
+                    window.removeEventListener("test", null, options);
                 } catch (err) {
                   self.passiveSupported = !1;
                 }
-              }
+              },
             },
             {
-              key: 'initRequestIdleCallback',
+              key: "initRequestIdleCallback",
               value: function () {
                 !1 in window &&
                   (window.requestIdleCallback = function (cb) {
@@ -4399,7 +4103,7 @@
                         didTimeout: !1,
                         timeRemaining: function () {
                           return Math.max(0, 50 - (Date.now() - start));
-                        }
+                        },
                       });
                     }, 1);
                   }),
@@ -4407,41 +4111,41 @@
                     (window.cancelIdleCallback = function (id) {
                       return clearTimeout(id);
                     });
-              }
+              },
             },
             {
-              key: 'isDataSaverModeOn',
+              key: "isDataSaverModeOn",
               value: function () {
                 return (
-                  'connection' in navigator &&
+                  "connection" in navigator &&
                   !0 === navigator.connection.saveData
                 );
-              }
+              },
             },
             {
-              key: 'supportsLinkPrefetch',
+              key: "supportsLinkPrefetch",
               value: function () {
-                var elem = document.createElement('link');
+                var elem = document.createElement("link");
                 return (
                   elem.relList &&
                   elem.relList.supports &&
-                  elem.relList.supports('prefetch') &&
+                  elem.relList.supports("prefetch") &&
                   window.IntersectionObserver &&
-                  'isIntersecting' in IntersectionObserverEntry.prototype
+                  "isIntersecting" in IntersectionObserverEntry.prototype
                 );
-              }
+              },
             },
             {
-              key: 'isSlowConnection',
+              key: "isSlowConnection",
               value: function () {
                 return (
-                  'connection' in navigator &&
-                  'effectiveType' in navigator.connection &&
-                  ('2g' === navigator.connection.effectiveType ||
-                    'slow-2g' === navigator.connection.effectiveType)
+                  "connection" in navigator &&
+                  "effectiveType" in navigator.connection &&
+                  ("2g" === navigator.connection.effectiveType ||
+                    "slow-2g" === navigator.connection.effectiveType)
                 );
-              }
-            }
+              },
+            },
           ]),
           RocketBrowserCompatibilityChecker
         );
@@ -4449,14 +4153,14 @@
     </script>
     <script id="rocket-delay-js-js-after">
       (function () {
-        'use strict';
+        "use strict";
         var e = (function () {
           function n(e, t) {
             for (var r = 0; r < t.length; r++) {
               var n = t[r];
               (n.enumerable = n.enumerable || !1),
                 (n.configurable = !0),
-                'value' in n && (n.writable = !0),
+                "value" in n && (n.writable = !0),
                 Object.defineProperty(e, n.key, n);
             }
           }
@@ -4466,12 +4170,12 @@
         })();
         function n(e, t) {
           if (!(e instanceof t))
-            throw new TypeError('Cannot call a class as a function');
+            throw new TypeError("Cannot call a class as a function");
         }
         var t = (function () {
           function r(e, t) {
             n(this, r),
-              (this.attrName = 'data-rocketlazyloadscript'),
+              (this.attrName = "data-rocketlazyloadscript"),
               (this.browser = t),
               (this.options = this.browser.options),
               (this.triggerEvents = e),
@@ -4482,19 +4186,19 @@
               r,
               [
                 {
-                  key: 'init',
+                  key: "init",
                   value: function () {
                     this._addEventListener(this);
-                  }
+                  },
                 },
                 {
-                  key: 'reset',
+                  key: "reset",
                   value: function () {
                     this._removeEventListener(this);
-                  }
+                  },
                 },
                 {
-                  key: '_addEventListener',
+                  key: "_addEventListener",
                   value: function (t) {
                     this.triggerEvents.forEach(function (e) {
                       return window.addEventListener(
@@ -4503,10 +4207,10 @@
                         t.options
                       );
                     });
-                  }
+                  },
                 },
                 {
-                  key: '_removeEventListener',
+                  key: "_removeEventListener",
                   value: function (t) {
                     this.triggerEvents.forEach(function (e) {
                       return window.removeEventListener(
@@ -4515,41 +4219,41 @@
                         t.options
                       );
                     });
-                  }
+                  },
                 },
                 {
-                  key: '_loadScriptSrc',
+                  key: "_loadScriptSrc",
                   value: function () {
                     var r = this,
                       e = document.querySelectorAll(
-                        'script[' + this.attrName + ']'
+                        "script[" + this.attrName + "]"
                       );
                     0 !== e.length &&
                       Array.prototype.slice.call(e).forEach(function (e) {
                         var t = e.getAttribute(r.attrName);
-                        e.setAttribute('src', t), e.removeAttribute(r.attrName);
+                        e.setAttribute("src", t), e.removeAttribute(r.attrName);
                       }),
                       this.reset();
-                  }
+                  },
                 },
                 {
-                  key: 'triggerListener',
+                  key: "triggerListener",
                   value: function () {
                     this._loadScriptSrc(), this._removeEventListener(this);
-                  }
-                }
+                  },
+                },
               ],
               [
                 {
-                  key: 'run',
+                  key: "run",
                   value: function () {
                     RocketBrowserCompatibilityChecker &&
                       new r(
-                        ['keydown', 'mouseover', 'touchmove', 'touchstart'],
+                        ["keydown", "mouseover", "touchmove", "touchstart"],
                         new RocketBrowserCompatibilityChecker({ passive: !0 })
                       ).init();
-                  }
-                }
+                  },
+                },
               ]
             ),
             r
@@ -4561,29 +4265,29 @@
     <script id="rocket-preload-links-js-extra">
       var RocketPreloadLinksConfig = {
         excludeUris:
-          '\/golden(\/(.+\/)?feed\/?.+\/?|\/(?:.+\/)?embed\/|\/(index\\.php\/)?wp\\-json(\/.*|$))|\/wp-admin\/|\/logout\/|\/wp-login.php',
-        usesTrailingSlash: '1',
-        imageExt: 'jpg|jpeg|gif|png|tiff|bmp|webp|avif',
-        fileExt: 'jpg|jpeg|gif|png|tiff|bmp|webp|avif|php|pdf|html|htm',
-        siteUrl: 'https:\/\/pmenus.xyz\/golden',
-        onHoverDelay: '100',
-        rateThrottle: '3'
+          "\/golden(\/(.+\/)?feed\/?.+\/?|\/(?:.+\/)?embed\/|\/(index\\.php\/)?wp\\-json(\/.*|$))|\/wp-admin\/|\/logout\/|\/wp-login.php",
+        usesTrailingSlash: "1",
+        imageExt: "jpg|jpeg|gif|png|tiff|bmp|webp|avif",
+        fileExt: "jpg|jpeg|gif|png|tiff|bmp|webp|avif|php|pdf|html|htm",
+        siteUrl: "https:\/\/pmenus.xyz\/golden",
+        onHoverDelay: "100",
+        rateThrottle: "3",
       };
     </script>
     <script id="rocket-preload-links-js-after">
       (function () {
-        'use strict';
+        "use strict";
         var r =
-            'function' == typeof Symbol && 'symbol' == typeof Symbol.iterator
+            "function" == typeof Symbol && "symbol" == typeof Symbol.iterator
               ? function (e) {
                   return typeof e;
                 }
               : function (e) {
                   return e &&
-                    'function' == typeof Symbol &&
+                    "function" == typeof Symbol &&
                     e.constructor === Symbol &&
                     e !== Symbol.prototype
-                    ? 'symbol'
+                    ? "symbol"
                     : typeof e;
                 },
           e = (function () {
@@ -4592,7 +4296,7 @@
                 var i = t[n];
                 (i.enumerable = i.enumerable || !1),
                   (i.configurable = !0),
-                  'value' in i && (i.writable = !0),
+                  "value" in i && (i.writable = !0),
                   Object.defineProperty(e, i.key, i);
               }
             }
@@ -4602,7 +4306,7 @@
           })();
         function i(e, t) {
           if (!(e instanceof t))
-            throw new TypeError('Cannot call a class as a function');
+            throw new TypeError("Cannot call a class as a function");
         }
         var t = (function () {
           function n(e, t) {
@@ -4620,58 +4324,58 @@
               n,
               [
                 {
-                  key: 'init',
+                  key: "init",
                   value: function () {
                     !this.browser.supportsLinkPrefetch() ||
                       this.browser.isDataSaverModeOn() ||
                       this.browser.isSlowConnection() ||
                       ((this.regex = {
-                        excludeUris: RegExp(this.config.excludeUris, 'i'),
-                        images: RegExp('.(' + this.config.imageExt + ')$', 'i'),
-                        fileExt: RegExp('.(' + this.config.fileExt + ')$', 'i')
+                        excludeUris: RegExp(this.config.excludeUris, "i"),
+                        images: RegExp(".(" + this.config.imageExt + ")$", "i"),
+                        fileExt: RegExp(".(" + this.config.fileExt + ")$", "i"),
                       }),
                       this._initListeners(this));
-                  }
+                  },
                 },
                 {
-                  key: '_initListeners',
+                  key: "_initListeners",
                   value: function (e) {
                     -1 < this.config.onHoverDelay &&
                       document.addEventListener(
-                        'mouseover',
+                        "mouseover",
                         e.listener.bind(e),
                         e.listenerOptions
                       ),
                       document.addEventListener(
-                        'mousedown',
+                        "mousedown",
                         e.listener.bind(e),
                         e.listenerOptions
                       ),
                       document.addEventListener(
-                        'touchstart',
+                        "touchstart",
                         e.listener.bind(e),
                         e.listenerOptions
                       );
-                  }
+                  },
                 },
                 {
-                  key: 'listener',
+                  key: "listener",
                   value: function (e) {
-                    var t = e.target.closest('a'),
+                    var t = e.target.closest("a"),
                       n = this._prepareUrl(t);
                     if (null !== n)
                       switch (e.type) {
-                        case 'mousedown':
-                        case 'touchstart':
+                        case "mousedown":
+                        case "touchstart":
                           this._addPrefetchLink(n);
                           break;
-                        case 'mouseover':
-                          this._earlyPrefetch(t, n, 'mouseout');
+                        case "mouseover":
+                          this._earlyPrefetch(t, n, "mouseout");
                       }
-                  }
+                  },
                 },
                 {
-                  key: '_earlyPrefetch',
+                  key: "_earlyPrefetch",
                   value: function (t, e, n) {
                     var i = this,
                       r = setTimeout(function () {
@@ -4690,32 +4394,32 @@
                       },
                       { passive: !0 }
                     );
-                  }
+                  },
                 },
                 {
-                  key: '_addPrefetchLink',
+                  key: "_addPrefetchLink",
                   value: function (i) {
                     return (
                       this.prefetched.add(i.href),
                       new Promise(function (e, t) {
-                        var n = document.createElement('link');
-                        (n.rel = 'prefetch'),
+                        var n = document.createElement("link");
+                        (n.rel = "prefetch"),
                           (n.href = i.href),
                           (n.onload = e),
                           (n.onerror = t),
                           document.head.appendChild(n);
                       }).catch(function () {})
                     );
-                  }
+                  },
                 },
                 {
-                  key: '_prepareUrl',
+                  key: "_prepareUrl",
                   value: function (e) {
                     if (
                       null === e ||
-                      'object' !== (void 0 === e ? 'undefined' : r(e)) ||
+                      "object" !== (void 0 === e ? "undefined" : r(e)) ||
                       !1 in e ||
-                      -1 === ['http:', 'https:'].indexOf(e.protocol)
+                      -1 === ["http:", "https:"].indexOf(e.protocol)
                     )
                       return null;
                     var t = e.href.substring(0, this.config.siteUrl.length),
@@ -4725,61 +4429,61 @@
                         protocol: e.protocol,
                         origin: t,
                         pathname: n,
-                        href: t + n
+                        href: t + n,
                       };
                     return this._isLinkOk(i) ? i : null;
-                  }
+                  },
                 },
                 {
-                  key: '_getPathname',
+                  key: "_getPathname",
                   value: function (e, t) {
                     var n = t ? e.substring(this.config.siteUrl.length) : e;
                     return (
-                      n.startsWith('/') || (n = '/' + n),
-                      this._shouldAddTrailingSlash(n) ? n + '/' : n
+                      n.startsWith("/") || (n = "/" + n),
+                      this._shouldAddTrailingSlash(n) ? n + "/" : n
                     );
-                  }
+                  },
                 },
                 {
-                  key: '_shouldAddTrailingSlash',
+                  key: "_shouldAddTrailingSlash",
                   value: function (e) {
                     return (
                       this.config.usesTrailingSlash &&
-                      !e.endsWith('/') &&
+                      !e.endsWith("/") &&
                       !this.regex.fileExt.test(e)
                     );
-                  }
+                  },
                 },
                 {
-                  key: '_isLinkOk',
+                  key: "_isLinkOk",
                   value: function (e) {
                     return (
                       null !== e &&
-                      'object' === (void 0 === e ? 'undefined' : r(e)) &&
+                      "object" === (void 0 === e ? "undefined" : r(e)) &&
                       !this.prefetched.has(e.href) &&
                       e.origin === this.config.siteUrl &&
-                      -1 === e.href.indexOf('?') &&
-                      -1 === e.href.indexOf('#') &&
+                      -1 === e.href.indexOf("?") &&
+                      -1 === e.href.indexOf("#") &&
                       !this.regex.excludeUris.test(e.href) &&
                       !this.regex.images.test(e.href)
                     );
-                  }
-                }
+                  },
+                },
               ],
               [
                 {
-                  key: 'run',
+                  key: "run",
                   value: function () {
-                    'undefined' != typeof RocketPreloadLinksConfig &&
+                    "undefined" != typeof RocketPreloadLinksConfig &&
                       new n(
                         new RocketBrowserCompatibilityChecker({
                           capture: !0,
-                          passive: !0
+                          passive: !0,
                         }),
                         RocketPreloadLinksConfig
                       ).init();
-                  }
-                }
+                  },
+                },
               ]
             ),
             n
@@ -4795,7 +4499,7 @@
         NodeList.prototype.forEach) ||
         document.write(
           '<script src="https://pmenus.xyz/golden/wp-content/themes/twentytwentyone/assets/js/polyfills.js?ver=1.1"></scr' +
-            'ipt>'
+            "ipt>"
         );
     </script>
     <script
@@ -4856,55 +4560,55 @@
           edit: false,
           wpPreview: false,
           isScriptDebug: false,
-          isImprovedAssetsLoading: false
+          isImprovedAssetsLoading: false,
         },
         i18n: {
           shareOnFacebook:
-            'M\u03bf\u03b9\u03c1\u03b1\u03c3\u03c4\u03b5\u03af\u03c4\u03b5 \u03c3\u03c4\u03bf Facebook',
+            "M\u03bf\u03b9\u03c1\u03b1\u03c3\u03c4\u03b5\u03af\u03c4\u03b5 \u03c3\u03c4\u03bf Facebook",
           shareOnTwitter:
-            '\u039c\u03bf\u03b9\u03c1\u03b1\u03c3\u03c4\u03b5\u03af\u03c4\u03b5 \u03c3\u03c4\u03bf Twitter',
-          pinIt: '\u039a\u03b1\u03c1\u03c6\u03af\u03c4\u03c3\u03c9\u03bc\u03b1',
-          download: 'Download',
+            "\u039c\u03bf\u03b9\u03c1\u03b1\u03c3\u03c4\u03b5\u03af\u03c4\u03b5 \u03c3\u03c4\u03bf Twitter",
+          pinIt: "\u039a\u03b1\u03c1\u03c6\u03af\u03c4\u03c3\u03c9\u03bc\u03b1",
+          download: "Download",
           downloadImage:
-            '\u039a\u03b1\u03c4\u03ad\u03b2\u03b1\u03c3\u03bc\u03b1 \u03b5\u03b9\u03ba\u03cc\u03bd\u03b1\u03c2',
+            "\u039a\u03b1\u03c4\u03ad\u03b2\u03b1\u03c3\u03bc\u03b1 \u03b5\u03b9\u03ba\u03cc\u03bd\u03b1\u03c2",
           fullscreen:
-            '\u03a0\u03bb\u03ae\u03c1\u03b7\u03c2 \u03bf\u03b8\u03cc\u03bd\u03b7',
-          zoom: '\u039c\u03b5\u03b3\u03ad\u03bd\u03b8\u03c5\u03bd\u03c3\u03b7',
+            "\u03a0\u03bb\u03ae\u03c1\u03b7\u03c2 \u03bf\u03b8\u03cc\u03bd\u03b7",
+          zoom: "\u039c\u03b5\u03b3\u03ad\u03bd\u03b8\u03c5\u03bd\u03c3\u03b7",
           share:
-            '\u039a\u03bf\u03b9\u03bd\u03ae \u03c7\u03c1\u03ae\u03c3\u03b7',
+            "\u039a\u03bf\u03b9\u03bd\u03ae \u03c7\u03c1\u03ae\u03c3\u03b7",
           playVideo:
-            '\u0391\u03bd\u03b1\u03c0\u03b1\u03c1\u03b1\u03b3\u03c9\u03b3\u03ae \u0392\u03af\u03bd\u03c4\u03b5\u03bf',
+            "\u0391\u03bd\u03b1\u03c0\u03b1\u03c1\u03b1\u03b3\u03c9\u03b3\u03ae \u0392\u03af\u03bd\u03c4\u03b5\u03bf",
           previous:
-            '\u03a0\u03c1\u03bf\u03b7\u03b3\u03bf\u03cd\u03bc\u03b5\u03bd\u03bf',
-          next: '\u0395\u03c0\u03cc\u03bc\u03b5\u03bd\u03bf',
-          close: '\u039a\u03bb\u03b5\u03af\u03c3\u03b9\u03bc\u03bf'
+            "\u03a0\u03c1\u03bf\u03b7\u03b3\u03bf\u03cd\u03bc\u03b5\u03bd\u03bf",
+          next: "\u0395\u03c0\u03cc\u03bc\u03b5\u03bd\u03bf",
+          close: "\u039a\u03bb\u03b5\u03af\u03c3\u03b9\u03bc\u03bf",
         },
         is_rtl: false,
         breakpoints: { xs: 0, sm: 480, md: 768, lg: 1025, xl: 1440, xxl: 1600 },
-        version: '3.1.4',
+        version: "3.1.4",
         is_static: false,
         experimentalFeatures: [],
         urls: {
           assets:
-            'https:\/\/pmenus.xyz\/golden\/wp-content\/plugins\/elementor\/assets\/'
+            "https:\/\/pmenus.xyz\/golden\/wp-content\/plugins\/elementor\/assets\/",
         },
         settings: { page: [], editorPreferences: [] },
         kit: {
-          global_image_lightbox: 'yes',
-          lightbox_enable_counter: 'yes',
-          lightbox_enable_fullscreen: 'yes',
-          lightbox_enable_zoom: 'yes',
-          lightbox_enable_share: 'yes',
-          lightbox_title_src: 'title',
-          lightbox_description_src: 'description'
+          global_image_lightbox: "yes",
+          lightbox_enable_counter: "yes",
+          lightbox_enable_fullscreen: "yes",
+          lightbox_enable_zoom: "yes",
+          lightbox_enable_share: "yes",
+          lightbox_title_src: "title",
+          lightbox_description_src: "description",
         },
         post: {
           id: 729,
-          title: 'beverage%20%E2%80%93%20Golden',
+          title: "beverage%20%E2%80%93%20Golden",
           excerpt:
             '<p>Menu. Pasta Whole Grain Pasta Roasted eggplant spread, marinated tomatoes with garlic &#038; fresh basil 8 $25.00 Tortellini Gorgonzola Roasted eggplant spread, marinated tomatoes with garlic &#038; fresh basil 8 $18.50 Rigatoni Zuccati Roasted eggplant spread, marinated tomatoes with garlic &#038; fresh basil 8 $22.50 Spaghetti Marinara Roasted eggplant spread, marinated tomatoes with garlic &#038; &hellip;<\/p>\n<p class="read-more"> <a class="" href="https:\/\/websitedemos.net\/italian-restaurant-02\/menu\/"> <span class="screen-reader-text">Menu<\/span> Read More &raquo;<\/a><\/p>\n',
-          featuredImage: false
-        }
+          featuredImage: false,
+        },
       };
     </script>
     <script
@@ -4920,7 +4624,7 @@
         document.getElementById &&
         window.addEventListener &&
         window.addEventListener(
-          'hashchange',
+          "hashchange",
           function () {
             var t,
               e = location.hash.substring(1);
